@@ -1,0 +1,11 @@
+
+.table_wrapper{
+    margin: 20 auto;
+
+}
+
+
+.table_wrapper > table{
+    table-layout: auto;
+    row-gap: 2px;
+}
