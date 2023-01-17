@@ -3,6 +3,16 @@
     padding: 10px;
     margin: 0;
 }
+
+.dash-content{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
 .dash-nav{
     display: flex;
     justify-content: space-around;
@@ -35,19 +45,43 @@
 
 
 .nav-form > input[type="text"]{
-    padding: 12px 7px;
+    padding: 5px;
     width: 370px;
-    border: 1px solid #753;
+    border: 1px solid rgb(214, 214, 213);
     border-radius: 4px;
     margin-left: 24px;
+    height: 40px;
 
 }
 
 .nav-form > input[type="submit"]{
-    border: 1px solid #333;
-    padding: 12px 16px;
-    margin-left:15px;
-    border-radius: 4px;
+    appearance: none;
+  backface-visibility: hidden;
+  background-color: #00CDCD;
+  border-radius: 6px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 50px;
+  letter-spacing: normal;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
 }
 .side-nav{
     padding:12px;
@@ -56,7 +90,7 @@
 
 .side-nav > table {
     row-gap: 4px;
-    margin:20px 30px;
+    margin:0px 30px;
     width: 250px;
     border-collapse: collapse;
     border-style: hidden;
@@ -83,4 +117,11 @@
     border-radius: 6px;
     color: aliceblue;
 
+}
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left:20px;
 }

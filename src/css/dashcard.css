@@ -1,0 +1,31 @@
+.cardItem{
+    padding:4px 4px 4px 4px;
+    border:1px solid transparent;
+    border-radius: 6px;
+    width: 250px;
+    height: auto;
+    margin-right: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.cardItem > img{
+    
+    width: 100%;
+    border-radius: 6px;
+    z-index: 0;
+}
+
+.cardData{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding: 14px;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    color: aliceblue;
+    font-weight: bold;
+    
+}

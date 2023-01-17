@@ -1,11 +1,107 @@
 
 .table_wrapper{
-    margin: 20 auto;
+    display: flex;
+    flex-direction: row;
+
+    margin:0;
+    padding:10px;
 
 }
 
 
 .table_wrapper > table{
-    table-layout: auto;
-    row-gap: 2px;
+    
+    margin:25px 0px 0px 0px;
+    padding:0;
+    border-collapse: collapse;
+    width: 1200px;
+    table-layout: fixed;
+}
+
+.table_wrapper > table tr{
+    background-color: #f8f8f8;
+    padding:.35em;
+}
+
+.table_wrapper > table thead th{
+    padding:.60em;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+.table_wrapper > table tr td{
+    padding:.60em;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+/* CSS */
+.button-65 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #00CDCD;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-65:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
+
+.table_wrapper > table > caption{
+    margin: 15px;
+    padding:5px;
+    font-family: 'Sofia Sans', sans-serif;
+
 }

@@ -3,6 +3,7 @@ import '../css/dash.css';
 import home_icon from '../images/home_icon.png';
 import apps_add from '../images/apps_add.png';
 import DataTable from '../Views/DataTable';
+import Dashcard from './Dashcard';
 
 
 const Dashboard = () => {
@@ -13,7 +14,7 @@ const Dashboard = () => {
                     BlueBoxPortal
                 </h3>
                 <form className="nav-form">
-                    <input type="text" placeholder="search here"/>
+                    <input type="text" placeholder="......"/>
                     <input type="submit" value="Search"/>
                 </form>
                 <nav>
@@ -24,10 +25,11 @@ const Dashboard = () => {
                     </ul>
                 </nav>
             </div>
+            <div className='dash-content'>
             <div className="side-nav">
                 <table>
                     <thead>
-                        <th><td>Dashboard</td><td><img src={home_icon} alt='home_i'/></td></th>
+                        <th>Dashboard</th><th><img src={apps_add} alt='home_i'/></th>
                     </thead>
                     <tbody>
                         <tr><td>UI Elements</td> <td><img src={home_icon}/></td></tr>
@@ -47,19 +49,15 @@ const Dashboard = () => {
 
             <div className='content_wrapper'>
                 <div className='card-list'>
-                    <div className='cardItem'>
-                        <img src='#' alt='cardItem'/>
-                        <label>Stock Total</label>
-                        <p>$150,000</p>
-
-                        <quote>Increased by 60%</quote>
-                    </div>
+                    <Dashcard />
+                    <Dashcard />
+                    <Dashcard />
                 </div>
 
                 <DataTable />
 
             </div>
-
+            </div>
 
         </div>
      );
