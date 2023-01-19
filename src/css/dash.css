@@ -7,16 +7,25 @@
 .dash-content{
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-items:normal;
     align-items: center;
-
-
 }
 
-.dash-nav{
+.content_wrapper{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content:baseline;
     align-items: baseline;
+    
+}
+
+
+.dash-nav{
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content:space-around;
+    
 
 }
 
@@ -94,6 +103,7 @@
     width: 250px;
     border-collapse: collapse;
     border-style: hidden;
+    table-layout: fixed;
 }
 
 .side-nav > table thead th{

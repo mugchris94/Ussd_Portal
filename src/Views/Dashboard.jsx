@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import '../css/dash.css';
 import home_icon from '../images/home_icon.png';
 import apps_add from '../images/apps_add.png';
@@ -7,6 +9,23 @@ import Dashcard from './Dashcard';
 
 
 const Dashboard = () => {
+
+    const [items, setItems] = useState([]);
+
+    useEffect(()=>{
+        axios.get("https://dummyjson.com/carts/1")
+                .then((response)=>{
+                    return response.data;
+                })
+                .then((res)=>{
+                    const carts = res.products;
+                    if(carts.length = 4){
+                        setItems(carts)
+                    }
+                })
+            })
+           
+
     return ( 
         <div className="dash-wrapper">
             <div className="dash-nav">
@@ -49,9 +68,14 @@ const Dashboard = () => {
 
             <div className='content_wrapper'>
                 <div className='card-list'>
-                    <Dashcard />
-                    <Dashcard />
-                    <Dashcard />
+                {items.map((item) = >{
+                    return(
+                    <Dashcard 
+                        title = item.title, />
+                    });
+                )
+                };
+                    
                 </div>
 
                 <DataTable />

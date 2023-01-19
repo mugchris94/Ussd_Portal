@@ -14,8 +14,9 @@
     margin:25px 0px 0px 0px;
     padding:0;
     border-collapse: collapse;
-    width: 1200px;
+    width: 1100px;
     table-layout: fixed;
+    height: auto;
 }
 
 .table_wrapper > table tr{
