@@ -1,39 +1,49 @@
 
 .table_wrapper{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
 
     margin:0;
-    padding:10px;
+    padding:2px 2px 15px 2px;
 
 }
 
 
 .table_wrapper > table{
     
-    margin:25px 0px 0px 0px;
-    padding:0;
+    margin:30px 0px 0px 0px;
+    padding:0px;
     border-collapse: collapse;
-    width: 1100px;
+    width: 132vh;
     table-layout: fixed;
     height: auto;
+    text-align: left;
 }
 
-.table_wrapper > table tr{
-    background-color: #f8f8f8;
-    padding:.35em;
+.table_wrapper > table > caption{
+  text-align: left;
+  background-color: #fff;
+  padding: 10px 12px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
+
+.table_wrapper > table tbody tr{
+    background-color: #fff;
+    }
 
 .table_wrapper > table thead th{
     padding:.60em;
     font-family: 'Sofia Sans', sans-serif;
+    background-color: #fff;
 }
 
 
-.table_wrapper > table tr td{
-    padding:.60em;
-    text-align: center;
+.table_wrapper > table tbody tr td{
+    text-align: left;
     font-family: 'Sofia Sans', sans-serif;
+    padding:.60em;
 }
 
 
@@ -45,10 +55,10 @@
   border-radius: 10px;
   border-style: none;
   box-shadow: none;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  display:block; 
   font-family: 'Sofia Sans', sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -57,7 +67,7 @@
   line-height: 1.5;
   outline: none;
   overflow: hidden;
-  padding: 14px 23px;
+  padding: 10px 3px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -94,15 +104,10 @@
 
 @media (min-width: 768px) {
   .button-65 {
-    padding: 14px 22px;
-    width: 176px;
+    padding: 14px 32px;
+    width: 150px;
   }
 }
 
 
-.table_wrapper > table > caption{
-    margin: 15px;
-    padding:5px;
-    font-family: 'Sofia Sans', sans-serif;
 
-}

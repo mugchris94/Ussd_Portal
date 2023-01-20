@@ -1,19 +1,22 @@
 import React from "react";
-import { useEffect } from "react";
 import "../css/dashcard.css";
+import remove_icon from "../images/remove_icon.png"
+
+
 const Dashcard = (props) => {
 
      
 
     return ( 
         <div className='cardItem'>
-            <img src='https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg' alt='cardItem'/>
+            
             <div className="cardData">
-                <label>title: {props.title}</label>
+                <img src={remove_icon} alt="remove"/>
+                <label><em>{props.title}</em></label>
                 <p>${props.price}</p>
                 <p>Quantity: {props.quantity}</p>
-                <p>total: {props.total}</p>
-                <quote>Increased by 60%</quote>
+                <quote>Discount {props.discount}%</quote>
+                
             </div>
            
         </div>

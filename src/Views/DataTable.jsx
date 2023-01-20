@@ -41,7 +41,7 @@ const DataTable = () => {
     return ( 
             <div className='table_wrapper'>
                     <table>
-                    <caption>Statement Summary</caption>
+                        <caption>Standard Table Design</caption>
                         <thead>
                             <th>UserId</th>
                             <th>FullName</th>

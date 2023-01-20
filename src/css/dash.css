@@ -1,5 +1,4 @@
 .dash-wrapper{
-    box-sizing: border-box;
     padding: 10px;
     margin: 0;
 }
@@ -16,22 +15,38 @@
     flex-direction: column;
     justify-content:baseline;
     align-items: baseline;
+    background-color: #EEEE;
+    width: 135vh;
+    border-radius: 6px;
+    height: 100vh;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+    padding: 7px;
+
     
 }
 
+.content_wrapper > h2{
+    font-family: 'Sofia Sans', sans-serif;
+    color: #00CDCD;
+    
+
+}
+.content_wrapper > h2 > img{
+    margin-right: 10px;
+}
 
 .dash-nav{
     display:flex;
-    flex-direction: row;
+    align-items: center;
     justify-items: center;
-    justify-content:space-around;
-    
+    flex-wrap: nowrap;
 
 }
 
 .dash-nav > h3{
     color: #00CDCD;
     font-weight: bolder;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 
@@ -50,60 +65,87 @@
     text-decoration: none;
     text-transform: capitalize;
     color: black;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 
 .nav-form > input[type="text"]{
-    padding: 5px;
-    width: 370px;
+    padding: 3px;
+    width: 570px;
     border: 1px solid rgb(214, 214, 213);
     border-radius: 4px;
     margin-left: 24px;
-    height: 40px;
+    height: 30px;
 
 }
 
 .nav-form > input[type="submit"]{
-    appearance: none;
-  backface-visibility: hidden;
+
   background-color: #00CDCD;
-  border-radius: 6px;
+  border-radius: 4px;
   border-style: none;
-  box-shadow: none;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: 'Sofia Sans', sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
-  height: 50px;
+  height: 40px;
   letter-spacing: normal;
   outline: none;
   overflow: hidden;
-  padding: 14px 30px;
-  position: relative;
+  padding: 10px 30px;
+  margin-left:12px;
   text-align: center;
   text-decoration: none;
   
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: top;
+
   white-space: nowrap;
 }
 .side-nav{
-    padding:12px;
-    
+    padding:12px;    
 }
 
+.profile{
+    display:flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding: 16px;
+    margin:10px;
+}
+
+
+.profile > img{
+    width: 50px;
+    border-radius: 50%;
+    border:none;
+
+}
+
+ul.user_detail {
+    font-size: 13px;
+    padding: 10px;
+    margin:0px;
+    list-style-type: none;
+
+}
+
+
+
+
+
 .side-nav > table {
-    row-gap: 4px;
+    /* row-gap: 4px; */
     margin:0px 30px;
     width: 250px;
     border-collapse: collapse;
     border-style: hidden;
-    table-layout: fixed;
+    
+
 }
 
 .side-nav > table thead th{
@@ -132,6 +174,6 @@
 .card-list{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    margin-left:20px;
+    margin-top: 10px;
+    margin-left:10px;
 }

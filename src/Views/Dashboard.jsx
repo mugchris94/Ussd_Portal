@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import '../css/dash.css';
 import home_icon from '../images/home_icon.png';
+import profile from '../images/profile.jpg';
 import apps_add from '../images/apps_add.png';
 import DataTable from '../Views/DataTable';
 import Dashcard from './Dashcard';
@@ -33,7 +34,7 @@ const Dashboard = () => {
                     BlueBoxPortal
                 </h3>
                 <form className="nav-form">
-                    <input type="text" placeholder="......"/>
+                    <input type="text" placeholder=""/>
                     <input type="submit" value="Search"/>
                 </form>
                 <nav>
@@ -46,6 +47,15 @@ const Dashboard = () => {
             </div>
             <div className='dash-content'>
             <div className="side-nav">
+                <div className='profile'>
+                    <img src={profile} alt="profile"/>
+                    
+                    <ul className="user_detail">
+                        <li className='active'>Christian Mugisha</li>
+                        <li>Lead Software Developer</li>
+                    </ul>
+                    
+                </div>
                 <table>
                     <thead>
                         <th>Dashboard</th><th><img src={apps_add} alt='home_i'/></th>
@@ -67,14 +77,23 @@ const Dashboard = () => {
             </div>
 
             <div className='content_wrapper'>
+                <h2><img src={apps_add} alt="app_add"/>
+                    Dashboard
+                </h2>
+                
                 <div className='card-list'>
-                {items.map((item) = >{
+                {items.map((item) => {
                     return(
                     <Dashcard 
-                        title = item.title, />
-                    });
+                        title = {item.title} 
+                        price= {item.price} 
+                        quantity={item.quantity}
+                        total = {item.total}
+                        discount = {item.discountPercentage}
+                        />
+                    )}
                 )
-                };
+                }
                     
                 </div>
 

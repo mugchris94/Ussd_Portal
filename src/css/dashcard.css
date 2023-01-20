@@ -1,31 +1,51 @@
 .cardItem{
-    padding:4px 4px 4px 4px;
+    padding:2px;
     border:1px solid transparent;
     border-radius: 6px;
-    width: 250px;
-    height: auto;
+    width: 270px;
+    height: 220px;
     margin-right: 12px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    background: radial-gradient(#60efbc, #58d5c9);
     overflow: hidden;
     position: relative;
+    box-sizing: content-box;
+    transition: all 0.2s;
 }
 
-.cardItem > img{
+.cardItem:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+
+
+/* .cardItem > img{
     
     width: 100%;
     border-radius: 6px;
     z-index: 0;
-}
+    height: 100%;
+} */
 
 .cardData{
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    padding: 14px;
-    position: absolute;
-    top:0;
-    z-index: 1;
-    color: aliceblue;
-    font-weight: bold;
     
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+       
+}
+
+.cardData > label,p,quote{
+    padding: 0px;
+    font-family:'Sofia Sans', sans-serif;;
+}
+
+
+.cardData > img{
+    display: block;
+    padding-bottom: 10px;
+    padding-top:0px;
+    margin-left:220px;
 }
