@@ -7,6 +7,7 @@ import profile from '../images/profile.jpg';
 import apps_add from '../images/apps_add.png';
 import DataTable from '../Views/DataTable';
 import Dashcard from './Dashcard';
+import Updates from "../Views/Updates.jsx";
 
 
 const Dashboard = () => {
@@ -20,7 +21,7 @@ const Dashboard = () => {
                 })
                 .then((res)=>{
                     const carts = res.products;
-                    if(carts.length = 4){
+                    if(carts.length = 3){
                         setItems(carts)
                     }
                 })
@@ -61,13 +62,13 @@ const Dashboard = () => {
                         <th>Dashboard</th><th><img src={apps_add} alt='home_i'/></th>
                     </thead>
                     <tbody>
-                        <tr><td>UI Elements</td> <td><img src={home_icon}/></td></tr>
-                        <tr><td>Comonents</td><td><img src={apps_add} alt="app_add"/></td></tr>
-                        <tr><td>Forms Stuff</td></tr>
-                        <tr><td>Data Table</td></tr>
-                        <tr><td>Icons</td></tr>
-                        <tr><td>Sample Page</td></tr>
-                        <tr><td>Extra</td></tr>
+                        <tr><td>Dashboard</td> <td><img src={home_icon}/></td></tr>
+                        <tr><td>Orders</td><td><img src={apps_add} alt="app_add"/></td></tr>
+                        <tr><td>Customers</td></tr>
+                        <tr><td>Products</td></tr>
+                        <tr><td>Analytics</td></tr>
+                        <tr><td>Trends</td></tr>
+                        <tr><td>Billing</td></tr>
                     </tbody>
 
                 </table>
@@ -76,6 +77,7 @@ const Dashboard = () => {
                 </form>
             </div>
 
+            <div className='main_wrapper'>
             <div className='content_wrapper'>
                 <h2><img src={apps_add} alt="app_add"/>
                     Dashboard
@@ -100,8 +102,9 @@ const Dashboard = () => {
                 <DataTable />
 
             </div>
+            <Updates />
             </div>
-
+            </div>
         </div>
      );
 }

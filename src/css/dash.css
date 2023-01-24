@@ -9,14 +9,18 @@
     justify-items:normal;
     align-items: center;
 }
+.main_wrapper{
+    display: flex;
+    
 
+}
 .content_wrapper{
     display: flex;
     flex-direction: column;
     justify-content:baseline;
     align-items: baseline;
     background-color: #EEEE;
-    width: 135vh;
+    width: 100vh;
     border-radius: 6px;
     height: 100vh;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
